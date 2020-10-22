@@ -26,11 +26,25 @@
 	<li>task3 - Strings&Values2:<br>
 	<?php
 	$one = 'Good morning';
-	$two = 'ladyies';
+	$two = 'ladies';
 	$three = 'and gentlemen';
-	echo "<pre> $one $two $three </pre>";
+	echo "<ul> <li>$one</li> <li>$two</li> <li>$three</li> </ul>";
 	$full = $one .', '. $two .' '. $three;
 	echo $full;
 	?>
 	</li>
+	<br>
+	<li>task4 - Arrays:<br>
+	<?php
+	$arr1 = array(12, 45, 'john', 6);
+	$arr2 = ['valhalla', 'heaven', 'hell', 6];
+	$arr1['element'] = 2;
+	unset($arr2[0]);
+	echo "$arr1[2] , $arr2[2]";
+	echo '<pre>';
+	print_r($arr1);
+	print_r($arr2);
+	echo '</pre>';
+	echo '1st array has '. count($arr1) . ' elements, 2nd has - ' . count($arr2);
+	?>
 	</ol>
