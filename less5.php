@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 	<ol>
-		<li>task1: CicleSum<br>
+		<li>
+		task1: CicleSum<br>
 		<?php
 		$i;
 		$sum1 = 0;
@@ -33,9 +34,8 @@
 		task3: Menu array<br>
 		<?php
 		$menu = [];
-		$butnum = 10;
-		for ($i = 0; $i < 10; $i++){
-			$menu[$i] = 'Button# '. (string)($butnum--);
+		for ($i = 10; $i > 0; $i--){
+			$menu[$i] = "Button# $i";
 		}
 		sort($menu, SORT_NATURAL);
 		echo "<ul>\n";
